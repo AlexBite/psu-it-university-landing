@@ -1,0 +1,23 @@
+{
+  "name": "psu-it-university-landing",
+  "version": "1.0.0",
+  "description": "Лендинг Института компьютерных технологий ПГНИУ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexBite/psu-it-university-landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexBite/psu-it-university-landing/issues"
+  },
+  "homepage": "https://github.com/AlexBite/psu-it-university-landing#readme",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
