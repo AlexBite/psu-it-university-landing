@@ -4,7 +4,7 @@
   "description": "Лендинг Института компьютерных технологий ПГНИУ",
   "main": "index.js",
   "scripts": {
-    "start": "tsc --watch"
+    "start": "webpack serve --mode development"
   },
   "repository": {
     "type": "git",
