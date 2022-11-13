@@ -120,13 +120,23 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/components/header.ts":
+/*!**********************************!*\
+  !*** ./src/components/header.ts ***!
+  \**********************************/
+/***/ (() => {
+
+eval("\r\nconst headerTemplate = document.createElement('template');\r\nheaderTemplate.innerHTML = `\r\n  <style>\r\n    nav {\r\n      height: 40px;\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: center;\r\n      background-color:  #0a0a23;\r\n    }\r\n\r\n    ul {\r\n      padding: 0;\r\n    }\r\n    \r\n    ul li {\r\n      list-style: none;\r\n      display: inline;\r\n    }\r\n    \r\n    a {\r\n      font-weight: 700;\r\n      margin: 0 25px;\r\n      color: #fff;\r\n      text-decoration: none;\r\n    }\r\n    \r\n    a:hover {\r\n      padding-bottom: 5px;\r\n      box-shadow: inset 0 -2px 0 0 #fff;\r\n    }\r\n  </style>\r\n  <header>\r\n    <nav class=\"mt-5\">\r\n      <ul>\r\n        <li><a href=\"about.html\">About</a></li>\r\n        <li><a href=\"work.html\">Work</a></li>\r\n        <li><a href=\"contact.html\">Contact</a></li>\r\n      </ul>\r\n    </nav>\r\n  </header>\r\n`;\r\nclass Header extends HTMLElement {\r\n    constructor() {\r\n        super();\r\n    }\r\n    connectedCallback() {\r\n        const shadowRoot = this.attachShadow({ mode: 'closed' });\r\n        shadowRoot.appendChild(headerTemplate.content);\r\n    }\r\n}\r\ncustomElements.define('header-component', Header);\r\n\n\n//# sourceURL=webpack://psu-it-university-landing/./src/components/header.ts?");
+
+/***/ }),
+
 /***/ "./src/ts/main.ts":
 /*!************************!*\
   !*** ./src/ts/main.ts ***!
   \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/styles.scss */ \"./src/scss/styles.scss\");\n// Import our custom CSS\r\n\r\n// import '../components';\r\nconsole.log('Hello, world!!');\r\n\n\n//# sourceURL=webpack://psu-it-university-landing/./src/ts/main.ts?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n// Import our custom CSS\r\n__webpack_require__(/*! ../scss/styles.scss */ \"./src/scss/styles.scss\");\r\n__webpack_require__(/*! ../components/header.ts */ \"./src/components/header.ts\");\r\nconsole.log('Hello, world!!');\r\n\n\n//# sourceURL=webpack://psu-it-university-landing/./src/ts/main.ts?");
 
 /***/ }),
 
