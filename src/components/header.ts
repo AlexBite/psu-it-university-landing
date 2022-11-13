@@ -32,7 +32,7 @@ headerTemplate.innerHTML = `
     }
   </style>
   <header>
-    <nav class="mt-5">
+    <nav class="mb-5">
       <ul>
         <li><a href="about.html">About</a></li>
         <li><a href="work.html">Work</a></li>
@@ -49,7 +49,7 @@ class Header extends HTMLElement {
 
     connectedCallback() {
         console.log('instantiated');
-        const shadowRoot = this.attachShadow({ mode: 'closed' });
+        const shadowRoot = this.attachShadow({ mode: 'open' });
 
         shadowRoot.appendChild(headerTemplate.content);
     }
