@@ -4,4 +4,6 @@ import '../scss/styles.scss'
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap';
 
+import '../components/header.ts';
+
 console.log('Hello, world!!');
