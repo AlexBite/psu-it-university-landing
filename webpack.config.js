@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-    entry: './src/js/main.js',
+    entry: './src/ts/main.ts',
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist')
@@ -13,6 +13,11 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
             {
                 test: /\.(scss)$/,
                 use: [
